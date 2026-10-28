@@ -39,3 +39,5 @@ function validateWorkspaceData(data){
  if(data.personalSkins){if(!Array.isArray(data.personalSkins)||data.personalSkins.length>50)throw Error('Coleção inválida.');data.personalSkins=data.personalSkins.map(validatePersonalSkin)}
  return data;
 }
+const originalBrandPage=brand;
+brand=()=>{originalBrandPage();const description=document.createElement('p');description.className='notice';description.textContent='Esta é a marca da produtora, usada nos módulos comerciais. A identidade de cada cliente é configurada dentro do respectivo projeto.';$('#main').append(description);if(state.brand.logo){const button=document.createElement('button');button.type='button';button.id='clear-workspace-logo';button.textContent='Remover logo da produtora';button.onclick=async()=>{state.brand.logo='';await save();brand();toast('Logo removido desta configuração. O arquivo original foi preservado.');};$('#brand-form').append(button)}};
