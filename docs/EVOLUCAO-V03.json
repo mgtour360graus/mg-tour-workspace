@@ -1,0 +1,44 @@
+{
+  "version": "0.3",
+  "date": "2026-10-28",
+  "reference": "https://www.sphere360.com.br/spherehub/apps/orbita/Orbita_Studio.html?v=fast-20261020a",
+  "method": "Observação da interface e testes autorizados no projeto de exemplo. Implementação própria; código do produto de referência não incorporado.",
+  "delivered": [
+    "Pontos com arraste direto, ajuste por teclado, edição e teste separados",
+    "Tamanho, rotação, opacidade, cor, quatro formatos e quatro opções de animação por ponto",
+    "Transição padrão e substituição por ponto, câmera de chegada e visão inicial de cena",
+    "Cena de entrada do tour e manutenção de direção por cena",
+    "Oito efeitos próprios com espera pelo carregamento e respeito ao movimento reduzido",
+    "Visualização adaptativa, desktop, tablet e mobile vertical/horizontal",
+    "Desfazer edições de pontos, câmera e transições na sessão atual",
+    "Exportação independente com o mesmo módulo de experiência e aparência dos pontos",
+    "Auditoria de pinos inválidos e cena de entrada inexistente",
+    "Planejamento de três pacotes comerciais editáveis e simulador de custos"
+  ],
+  "verification": {
+    "browser": "Chromium por controle do navegador; não certifica Safari ou aparelhos físicos",
+    "transitions": "Oito efeitos selecionados e executados entre as duas panorâmicas do projeto de teste",
+    "hotspot": "Arraste observado; edição persistiu após recarregamento; navegação chegou ao segundo panorama com horizontal 25 graus e campo de visão 65 graus",
+    "skins": "15 IDs de composição distintos, marca e logo preservados; controles dentro de uma prévia de 390 x 740",
+    "viewports": [320,390,768,1440],
+    "export": "ZIP real gerado pela interface, extraído, CRC verificado e runtime conferido; hotspot abriu a segunda panorâmica; controles dentro da viewport em 390 x 844",
+    "commercial": "Somente teste local fictício: 20 clientes, receita por cliente 100, custo fixo 200, variável 10 e taxas 5%; receita 2000, custos 500, saldo 1500, equilíbrio em 3 clientes"
+  },
+  "monetization": {
+    "status": "Planejamento comercial; nenhuma cobrança ativa",
+    "packages": ["Essencial: profissional individual", "Profissional: produção recorrente", "Estúdio: equipe e uso da própria marca"],
+    "prices": "Não definidos; campos começam vazios",
+    "dimensions_to_price": ["Usuários e equipes", "Projetos ativos", "Armazenamento", "Hospedagem e tráfego", "Processamento", "Exportação", "Suporte e retenção de backups"],
+    "server_requirements": ["Identidade e isolamento por conta", "Papéis de proprietário e editor", "Cotas verificadas no servidor", "Medição do uso", "Checkout e eventos de pagamento autenticados", "Idempotência", "Cancelamento, retenção e recuperação de dados"],
+    "reference_limit": "A página de planos da referência informa que os benefícios mensais ainda dependem da implementação e validação do controle de assinaturas. A oferta visual não comprova cobrança operacional."
+  },
+  "remaining": [
+    "Cadastro de referências por link com análise real e composição revisável",
+    "Guia, áudio, vídeo, nadir, múltiplos pavimentos e radar acompanhando a câmera",
+    "Integração de publicação no Google Street View",
+    "Integração nativa com uma exportação real de 3DVista",
+    "Servidor, sincronização, permissões por usuário e assinatura operacional",
+    "Testes em dispositivos físicos e auditoria completa de todas as combinações de recursos"
+  ],
+  "security": "Acesso privado da publicação e backups criptografados são camadas existentes. O JavaScript, CSS e demais recursos enviados ao navegador não são apresentados como invisíveis ou impossíveis de copiar. O armazenamento ativo continua local ao navegador."
+}
