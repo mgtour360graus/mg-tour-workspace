@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-28",
+  "product_version": "0.2",
+  "meaning": {"inspecionado": "Interface aberta e campos lidos", "exercitado": "Ação feita e resultado observado", "pendente": "Não comprovado nesta sessão"},
+  "sphere_reference": [
+    {"module": "Aplicativos", "state": "inspecionado", "evidence": "10 ferramentas, categorias e cotas visíveis; busca/filtros não exercitados"},
+    {"module": "Stitch", "state": "exercitado", "evidence": "Demonstração sintética de seis direções carregada; cobertura geométrica informada em 100%", "pending": "Montagem de fotos reais, costura e exportação"},
+    {"module": "CRM", "state": "inspecionado", "evidence": "Cinco etapas, resumo, CSV e formulário de novo cliente", "pending": "Salvar/mover/arquivar cliente e conferir CSV"},
+    {"module": "Prospect", "state": "inspecionado", "evidence": "Região, mapa, base incluída, filtros, fila, envio manual e cota", "pending": "Consulta de empresa, geração de abordagem, histórico e resultados"},
+    {"module": "Órbita", "state": "exercitado", "evidence": "Projeto teste BMW; identidade, skin, proporções, auditoria, hotspot manual, sequência, navegação e pronto", "pending": "ZIP final íntegro, importação de logo pela extensão, todos os modelos/efeitos/mídias e revisão física de cada ponto"},
+    {"module": "Street Studio", "state": "inspecionado", "evidence": "Importar, posicionar GPS, conectar, revisar, Google OAuth e agendar expostos", "pending": "Autorização Google, upload e publicação"},
+    {"module": "Catálogo", "state": "inspecionado", "evidence": "Formulário de dois tours; lista, mapa e filtros; exportar encerra cota", "pending": "Salvar e publicar/exportar catálogo"},
+    {"module": "Proposta", "state": "inspecionado", "evidence": "Cliente, 4–60 ambientes, serviços, adicionais, condições, validação e prévia", "pending": "Minha tabela, cálculo com dados e DOCX final"},
+    {"module": "Planeje", "state": "inspecionado", "evidence": "Personalização e primeira etapa do briefing; ativar torna catálogo público", "pending": "Demais etapas completas e envio de solicitação"},
+    {"module": "Foto", "state": "exercitado", "evidence": "Novo documento transparente 1920×1080 criado", "pending": "Foto real, camadas, curvas, máscaras, retoque e exportação"},
+    {"module": "PDF", "state": "exercitado", "evidence": "Novo documento A4 de uma página criado", "pending": "Importação Word/PDF, formulários, marcas e exportação"},
+    {"module": "Planos", "state": "inspecionado", "evidence": "Oferta comercial lida; controle de assinaturas indicado como pendente pelo site", "pending": "Contratação/cobrança não realizadas"},
+    {"module": "Minha marca", "state": "inspecionado", "evidence": "Nome, assinatura, cor e logo; uso compartilhado com catálogo/proposta", "pending": "Salvar identidade global da conta"}
+  ],
+  "mg_tour": [
+    {"feature": "15 skins", "state": "exercitado", "evidence_file": "evidencias/qa-15-skins.json"},
+    {"feature": "Projetos individuais", "state": "exercitado", "evidence_file": "evidencias/qa-projetos-individuais.json"},
+    {"feature": "Criar nova skin", "state": "exercitado", "evidence": "Skin pessoal criada pela UI; 15 bases preservadas; exportação de coleção habilitada"},
+    {"feature": "Panoramas e hotspots", "state": "exercitado", "evidence": "Dois panoramas BMW importados; conexão e navegação real comprovadas"},
+    {"feature": "ZIP próprio", "state": "exercitado", "evidence_file": "evidencias/qa-zip-previa.json"},
+    {"feature": "Criptografia do backup", "state": "exercitado", "evidence_file": "evidencias/qa-seguranca-e-exportacao.json"},
+    {"feature": "Responsivo", "state": "exercitado", "evidence_file": "evidencias/qa-responsivo.json", "pending": "Dispositivos físicos, Safari e VR"},
+    {"feature": "CRUD comercial local", "state": "implementado", "pending": "QA completo dos fluxos de CRM, briefing, proposta e catálogo"},
+    {"feature": "3DVista nativo", "state": "pendente"},
+    {"feature": "Backend e autorização", "state": "pendente"},
+    {"feature": "Google Street View", "state": "pendente"},
+    {"feature": "Foto/PDF/costura/áudio/guias/mapa 3D", "state": "pendente"}
+  ]
+}

@@ -1,0 +1,6 @@
+evidencias/
+qa/
+*.zip
+*.tar.gz
+node_modules/
+.env*
