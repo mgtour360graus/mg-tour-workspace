@@ -1,0 +1,13 @@
+{
+  "name": "mg-tour-workspace",
+  "version": "0.3.1",
+  "private": true,
+  "description": "Workspace MG Tour 360 — desenvolvimento privado",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node scripts/serve.cjs",
+    "check": "node scripts/check.cjs",
+    "test": "node verify-security-exports.cjs && node verify-v3.cjs && node --test tests/server.test.cjs",
+    "verify": "npm run check && npm test"
+  }
+}

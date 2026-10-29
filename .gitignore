@@ -4,3 +4,7 @@ qa/
 *.tar.gz
 node_modules/
 .env*
+.DS_Store
+*.log
+coverage/
+.reports/

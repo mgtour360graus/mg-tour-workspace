@@ -1,0 +1,8 @@
+{
+  "name": "MG Tour Workspace",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "forwardPorts": [8794],
+  "portsAttributes": { "8794": { "label": "MG Tour Workspace — prévia", "onAutoForward": "openPreview" } },
+  "postCreateCommand": "npm ci && npm run verify",
+  "postStartCommand": "nohup npm start > /tmp/mg-tour-preview.log 2>&1 &"
+}

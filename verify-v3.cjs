@@ -2,8 +2,8 @@ const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),asse
 const root=__dirname,out=path.join(root,'evidencias','v03');fs.mkdirSync(out,{recursive:true});
 const sandbox={console,crypto:crypto.webcrypto,TextEncoder,TextDecoder,URL,Blob,atob,btoa,structuredClone,setTimeout,clearTimeout,performance,window:{},document:{querySelector(){return null}},fetch:async()=>({ok:true,text:async()=>fs.readFileSync(path.join(root,'dist/studio-v3.css'),'utf8')})};vm.createContext(sandbox);
 for(const file of['experience-core.js','skins.js','app.js','workspace-v2.js','studio-v3.js','business-v3.js']){let source=fs.readFileSync(path.join(root,'dist',file),'utf8');if(file==='app.js')source=source.slice(0,source.lastIndexOf('start().catch'));vm.runInContext(source,sandbox,{filename:file});}
-const backup=JSON.parse(fs.readFileSync(path.join(root,'evidencias/MG-TOUR-WORKSPACE-V02-BACKUP.json'),'utf8'));sandbox.fixture=backup;
-const results={legacy_backup:vm.runInContext('validateWorkspaceData(fixture).projects.length',sandbox)};
+const backup=require('./tests/fixture.cjs')();sandbox.fixture=backup;
+const results={synthetic_workspace_projects:vm.runInContext('validateWorkspaceData(fixture).projects.length',sandbox)};
 const rejected=code=>{try{vm.runInContext('(()=>{const value=structuredClone(fixture);'+code+';validateWorkspaceData(value)})()',sandbox);return false}catch{return true}};
 results.invalid_color_rejected=rejected("value.projects[0].scenes[0].hotspots[0].color='url(https://invalid.example)'");
 results.invalid_camera_rejected=rejected('value.projects[0].scenes[0].initialView={yaw:0,pitch:0,fov:0}');

@@ -1,10 +1,39 @@
-# MG Tour 360 Workspace — V0.2
+# MG Tour 360 Workspace — V0.3.1
 
 Projeto próprio iniciado em 28/10/2026 a partir de pesquisa funcional autorizada. O código da plataforma Sphere, seu motor, sua base comercial e seus arquivos de skins não foram incorporados.
 
 ## Abrir e continuar
 
-Sirva `dist/` por HTTP e abra o endereço no navegador. A prévia desta sessão usa `http://127.0.0.1:8794/`. O Site registrado está em `.openai/hosting.json`; seu ID deve ser reutilizado em atualizações. Nunca criar outro Site para esta pasta.
+Requisitos: Node.js 22 ou superior e npm. Não há dependências externas de execução.
+
+```sh
+npm ci
+npm run verify
+npm start
+```
+
+Abra `http://localhost:8794/`. O servidor entrega somente `dist/`, mantendo Git, documentação e backups fora da prévia. A porta pode ser alterada pela variável `PORT`.
+
+No GitHub: **Code → Codespaces → Create codespace on main**. A configuração instala a base, executa as verificações e inicia a prévia na porta 8794. Mantenha a porta privada. Codespaces depende da disponibilidade e da franquia da sua conta; a configuração não inicia uma máquina por si só.
+
+O Site registrado está em `.openai/hosting.json`; seu ID deve ser reutilizado em atualizações. Nunca criar outro Site para esta pasta. O fluxo GitHub não publica automaticamente no Sites nem em servidor definitivo.
+
+## Desenvolvimento e revisão
+
+Crie uma branch `feature/nome-da-melhoria` ou `fix/nome-da-correcao`, faça alterações, rode `npm run verify` e abra um pull request para `main`. O GitHub Actions repete as verificações a cada push e pull request. A revisão visual complementa os testes automáticos.
+
+Veja [o fluxo de desenvolvimento](docs/DESENVOLVIMENTO.md) e [o backlog](docs/BACKLOG.md). A configuração de CI está em `.github/workflows/ci.yml`. Os testes usam somente dados sintéticos em `tests/fixture.cjs`; os backups e as panorâmicas reais não são necessários para clonar e desenvolver.
+
+## V0.3: estúdio e operação
+
+- Hotspots com arraste, teclado, quatro formatos, quatro opções de animação, tamanho, rotação, cor e opacidade.
+- Oito transições próprias, câmera de chegada, visão inicial e cena de entrada.
+- Prévia desktop/tablet/mobile e desfazer edições durante a sessão.
+- Exportação independente com módulo de experiência compartilhado com o editor.
+- Auditoria de pinos órfãos e dados de câmera/pontos inválidos.
+- Planejamento de pacotes comerciais e simulador de custos, sem cobrança ativa.
+
+O registro detalhado está em `docs/EVOLUCAO-V03.json`.
 
 O armazenamento ativo usa IndexedDB no navegador e na origem corrente. Localhost e o Site hospedado têm armazenamentos distintos. Use o backup para transportar os dados. Os materiais originais em D: e os tours publicados não foram alterados.
 
