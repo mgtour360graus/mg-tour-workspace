@@ -1,5 +1,9 @@
 # MG Tour 360 Workspace — V0.3.1
 
+## Laboratório do curso — branch de testes
+
+Esta branch adiciona uma landing page e um guia do aluno em `dist/guia/`, com identidade própria na linha do Café Expresso, seis módulos e 16 comandos para skins 3DVista/Pano2VR. Após `npm start`, abra `http://localhost:8794/guia/index.html`. Consulte [o escopo, os limites e o roteiro de testes](docs/GUIA-TOUR360-TESTES.md). A publicação atual e a entrada do Workspace permanecem preservadas.
+
 Projeto próprio iniciado em 28/10/2026 a partir de pesquisa funcional autorizada. O código da plataforma Sphere, seu motor, sua base comercial e seus arquivos de skins não foram incorporados.
 
 ## Abrir e continuar
