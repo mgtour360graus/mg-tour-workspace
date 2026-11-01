@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#173b5c">
+  <meta name="description" content="Método MG TOUR para criar skins personalizadas com IA. Guia prático com caminhos para 3DVista e Pano2VR, composição adaptativa e verificação de entrega.">
+  <title>Máquina de Tour 360 · Café Expresso</title>
+  <link rel="icon" href="marca.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="data.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#inicio" aria-label="Máquina de Tour 360, início"><span class="brand-icon" aria-hidden="true">360<span>°</span></span><span>Café Expresso<small>MÁQUINA DE TOUR 360</small></span></a>
+    <nav class="desktop-nav" aria-label="Principal"><a href="#inicio">Apresentação</a><a href="#trilha">Guia do aluno</a><a href="#biblioteca">Comandos</a><a href="#materiais">Materiais</a></nav>
+    <button class="menu-toggle" id="open-menu" aria-label="Abrir navegação" aria-expanded="false" aria-controls="mobile-menu">☰ <span>Menu</span></button>
+    <a class="button small primary desktop-cta" href="#trilha">Entrar no laboratório <span aria-hidden="true">↗</span></a>
+  </header>
+  <dialog id="mobile-menu" class="mobile-menu" aria-labelledby="mobile-title"><div class="row"><strong id="mobile-title">Explore seu caminho</strong><button id="close-menu" class="icon-button" aria-label="Fechar navegação">×</button></div><nav aria-label="Principal no celular"><a href="#inicio">Apresentação</a><a href="#trilha">Guia do aluno</a><a href="#biblioteca">Biblioteca de comandos</a><a href="#materiais">Materiais e progresso</a></nav><p>Um passo por vez. O panorama continua sendo o protagonista.</p></dialog>
+  <main id="conteudo" tabindex="-1"></main>
+  <footer id="footer"><a class="footer-brand" href="#inicio">MG TOUR <span>360°</span></a><p>Método próprio · Laboratório de aprendizagem</p><a href="#materiais">Seus arquivos e sua continuidade ↗</a></footer>
+  <div id="notice" class="toast" role="status" aria-live="polite"></div>
+  <noscript><p>Ative JavaScript para abrir as aulas, montar comandos e salvar o progresso neste navegador.</p></noscript>
+</body>
+</html>
